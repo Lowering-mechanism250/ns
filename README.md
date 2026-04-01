@@ -16,21 +16,26 @@ A terminal network monitor for Linux. Shows real-time interface throughput, open
 - Linux (reads `/proc/net`, `/proc/<pid>/fd`, `/proc/net/fib_trie`, etc.)
 - Rust toolchain (stable)
 
-## Build
+## Installation
+
+### Quick Install (Pre-compiled)
+
+Download and install the latest release with a single command:
 
 ```sh
-cargo build --release
+curl -sSL https://raw.githubusercontent.com/sammwyy/ns/main/scripts/install.sh | sudo bash
 ```
 
-The binary ends up at `target/release/ns`.
+### Install from Source
 
-## Install
+Clone the repository and build the project using the provided scripts (requires Rust and UPX):
 
 ```sh
-cargo install --path .
+git clone https://github.com/sammwyy/ns.git
+cd ns
+./scripts/build.sh
+sudo ./scripts/install.sh
 ```
-
-Or copy the release binary somewhere on your `$PATH`.
 
 Running as a regular user is enough for most data. Process names and PIDs for sockets owned by other users require root.
 
