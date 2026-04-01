@@ -1,0 +1,22 @@
+[package]
+name = "ns"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ns"
+path = "src/main.rs"
+
+[dependencies]
+ratatui = "=0.26.3"
+crossterm = "0.27"
+unicode-segmentation = "=1.10.1"
+unicode-truncate = "=0.2.0"
+procfs = "0.16"
+nix = { version = "0.27", features = ["signal"] }
+anyhow = "1"
+
+[profile.release]
+opt-level = 3
+strip = true
+lto = true
